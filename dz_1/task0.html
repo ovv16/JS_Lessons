@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/style.css">
+	<title>Задача 0</title>
+</head>
+
+<body>
+	<h1 class="title">Задача 0</h1>
+	<p>Обчислити значення виразів</p>
+	<script>
+		// Описуємо і вводимо значення змінних
+		const a = parseFloat(prompt(`Введіть перше число`, `0`))
+		const b = parseFloat(prompt(`Введіть друге число`, `0`))
+		const c = parseFloat(prompt(`Введіть трете число`, `0`))
+		// Знаходемо результат
+		const sum1 = a + 12 + b
+		const sum2 = Math.pow((a + b) / (2 * a), 1 / 2)
+		const sum3 = Math.pow(((a + b) * c), 1 / 3)
+		const sum4 = Math.sin(a / -b)
+
+		// Виводимо результат
+		document.write(`
+	     <ol>
+		    <li>
+			    <p>S<sub>1</sub>= a + 12 + b</p>
+				<p>Результат: ${sum1.toFixed(2)} = ${a} + 12 + ${b}</p>
+			</li>
+		    <li>
+			    <p>S<sub>2</sub> = &radic;((a + b)/(2*a))</p>
+				<p>Результат: ${sum2.toFixed(2)} = &radic;((${a} + ${b})/(2*${a}))</p>
+			</li>
+		    <li>
+			    <p>S<sub>3</sub> = &#8731;((a + b) * c)</p>
+				<p>Результат: ${sum3.toFixed(2)} = &#8731;((${a} + ${b})*${c})</p>
+			</li>
+		    <li>
+			    <p>S<sub>4</sub> = sin ( a / -b )</p>
+				<p>Результат: ${sum4.toFixed(2)} = sin (${a} / -${b})</p>
+			</li>
+		</ol>
+		`)
+	</script>
+</body>
+<a href="/index.html"> На головну</a>
+
+</html>

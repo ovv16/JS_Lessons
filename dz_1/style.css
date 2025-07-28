@@ -1,0 +1,10 @@
+.title {
+	font-size: 1.5rem;
+}
+
+.list {
+	& h2{
+		font-size: 1.25rem;
+	}
+	&_item {}
+}
