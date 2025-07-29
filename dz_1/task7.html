@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 7</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+	<h1 class="title">Задача 7</h1>
+	<p>Знайти суму випадкового номера місяця (від 1 до 12) та випадкового номера дня (від 0 до 6).</p>
+	<script>
+		// Описуємо і вводимо значення змінних
+		let monthNumber = Math.floor(Math.random()* 12)+1
+		let dayNumber = Math.floor(Math.random()*7)
+		// Знаходемо результат
+		let sum = monthNumber+dayNumber
+		// Виводимо результат
+		document.write(`
+		<h2> Результат</h2>
+		<p> Номер місяця: ${monthNumber} </p>
+		<p> День місяця: ${dayNumber} </p>
+		<p> Сума: ${sum} </p>
+
+		`)
+	</script>
+	<a href="/index.html"> На головну</a>
+</body>
+
+</html>

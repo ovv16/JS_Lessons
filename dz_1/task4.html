@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 4</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+	<h1 class="title">Задача 4</h1>
+	<p>Дано довжину у сантиметрах. Визначати скільки це метрів і кілометрів.</p>
+	<script>
+		// Описуємо і вводимо значення змінних
+		const a = parseInt(prompt(`Введіть кількість сантиметрів`, `0`))
+		// Знаходемо результат
+		const m = a /100
+		const km = a/1000
+		// Виводимо результат
+		document.write(`
+		<h2> Результат</h2>
+		<p> Довжина в сантиметрах - ${a} см </p>
+		<p> Довжина в метрах - ${m} м </p>
+		<p> Довжина в кілометрах - ${km} км </p>
+		`)
+	</script>
+	<a href="/index.html"> На головну</a>
+</body>
+
+</html>

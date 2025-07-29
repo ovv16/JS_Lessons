@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 6</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+	<h1 class="title">Задача 6</h1>
+	<p>З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо
+		та
+		загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.</p>
+	<script>
+		// Описуємо і вводимо значення змінних
+		const a = parseInt(prompt(`Введіть вартість першого товару`, `0`))
+		const b = parseInt(prompt(`Введіть кількість першого товару`, `0`))
+		const c = parseInt(prompt(`Введіть вартість другого товару`, `0`))
+		const d = parseInt(prompt(`Введіть кількість другого товару`, `0`))
+		const e = parseInt(prompt(`Введіть вартість третього товару`, `0`))
+		const f = parseInt(prompt(`Введіть кількість третього товару`, `0`))
+		// Знаходемо результат
+		const sum1 = a * b
+		const sum2 = c * d
+		const sum3 = e * f
+		const total = sum1 + sum2 + sum3
+
+		// Виводимо результат
+		document.write(`
+		<h2> Результат</h2>
+		<table border="1px">
+			<thead>
+				<tr>
+					<th>
+						Назва товару
+					</th>	
+					<th>
+						Вартість товару, грн.
+					</th>	
+					<th>
+						Кількість товару, од.
+					</th>	
+					<th>
+						Сума, грн.
+					</th>	
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						Товар 1
+					</td>
+					<td>
+						${a.toFixed(2)}
+					</td>
+					<td>
+						${b}
+					</td>
+					<td>
+						${sum1.toFixed(2)}
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Товар 2
+					</td>
+					<td>
+						${c.toFixed(2)}
+					</td>
+					<td>
+						${d}
+					</td>
+					<td>
+						${sum2.toFixed(2)}
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Товар 3
+					</td>
+					<td>
+						${e.toFixed(2)}
+					</td>
+					<td>
+						${f}
+					</td>
+					<td>
+						${sum3.toFixed(2)}
+					</td>
+				</tr>
+				<tr>
+					<th colspan="3">
+						Загальна сума, грн
+					</th>
+					<th>
+						${total.toFixed(2)}
+					</th>
+				</tr>
+			</tbody>
+		</table>
+		`)
+	</script>
+	<a href="/index.html"> На головну</a>
+</body>
+
+</html>
