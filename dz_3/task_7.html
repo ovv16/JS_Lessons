@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача №7</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+	<h1>Задача №7</h1>
+	<p>З клавіатури вводиться номер місяця. Вивести до якої пори він відноситься</p>
+	<script>
+		const monthOfYear = parseInt(prompt(`Введіть номер місяця`, `0`))
+		if (monthOfYear > 0 && monthOfYear < 13) {
+			if (monthOfYear == 12 || monthOfYear < 3) {
+				document.write(`<h2>Відповідь:</h2><p> Цей місяць відноситься до зими.</p>`)
+			} else if (monthOfYear < 6) {
+				document.write(`<h2>Відповідь:</h2><p> Цей місяць відноситься до весни.</p>`)
+			}
+			else if (monthOfYear < 9) {
+				document.write(`<h2>Відповідь:</h2><p> Цей місяць відноситься до літа.</p>`)
+			}
+			else if (monthOfYear < 12) {
+				document.write(`<h2>Відповідь:</h2><p> Цей місяць відноситься до осені.</p>`)
+			}
+
+		} else {
+			document.write(`<h2>Відповідь:</h2><p> Помилка, введіть номер від 1 до 12.</p>`)
+		}
+
+	</script>
+	<a href="index.html"> На головну</a>
+</body>
+
+</html>

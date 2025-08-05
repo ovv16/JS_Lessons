@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача №6</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+	<h1>Задача №6</h1>
+	<p>З клавіатури вводиться номер дня тижня. Вивести на екран назву дня.</p>
+	<script>
+		const numberOfDay = parseInt(prompt(`Введіть номер дня тижня`, `1`))
+
+		switch (numberOfDay) {
+			case 1:
+				document.write(`<h2>Відповідь:</h2><p> Ви обрали понеділок.</p>`)
+				break;
+			case 2:
+				document.write(`<h2>Відповідь:</h2><p> Ви обрали вівторок.</p>`)
+				break;
+			case 3:
+				document.write(`<h2>Відповідь:</h2><p> Ви обрали середу.</p>`)
+				break;
+			case 4:
+				document.write(`<h2>Відповідь:</h2><p> Ви обрали четверг.</p>`)
+				break;
+			case 5:
+				document.write(`<h2>Відповідь:</h2><p> Ви обрали п'ятницю.</p>`)
+				break;
+			case 6:
+				document.write(`<h2>Відповідь:</h2><p> Ви обрали суботу.</p>`)
+				break;
+			case 7:
+				document.write(`<h2>Відповідь:</h2><p> Ви обрали неділю.</p>`)
+				break;
+
+			default:
+				document.write(`<h2>Відповідь:</h2><p style="color:red; font-weight:bold"> Помилка, оберіть від 1 до 7.</p>`)
+				break;
+		}
+	</script>
+	<a href="index.html"> На головну</a>
+</body>
+
+</html>

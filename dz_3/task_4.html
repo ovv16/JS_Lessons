@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача №4</title>
+	<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+	<h1>Задача №4</h1>
+	<p>З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом, працівником,
+	пенсіонером).</p>
+	<script>
+		const customerAge = parseInt(prompt(`Введіть скільки вам повних років`,`0`))
+		switch (true) {
+			case customerAge >= 65:
+				document.write(`<h2>Відповідь:</h2><p>Вам ${customerAge}. Ви пенсіонер.</p>`)
+				break;
+			case customerAge >=25:
+				document.write(`<h2>Відповідь:</h2><p>Вам ${customerAge}. Ви працівник.</p>`)
+				break;
+			case customerAge >=18:
+				document.write(`<h2>Відповідь:</h2><p>Вам ${customerAge}. Ви студент.</p>`)
+				break;
+			case customerAge >=6:
+				document.write(`<h2>Відповідь:</h2><p>Вам ${customerAge}. Ви школяр.</p>`)
+				break;
+		
+			default:
+				document.write(`<h2>Відповідь:</h2><p>Вам ${customerAge}. Ви дитина з дитячого садочку</p>`)
+				break;
+		}
+	</script>
+	<a href="index.html"> На головну</a>
+</body>
+
+</html>
