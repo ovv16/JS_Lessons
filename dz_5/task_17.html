@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 14</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="main">
+		<h1 class="main_title">
+			Задача 14.
+		</h1>
+		<h2 class="main_subtitle">
+			Умова задачі:
+		</h2>
+		<p class="main_text">
+			Каса. Користувачу повідомляють суму, яку йому треба сплатити. Користувач поступово вводить суму грошей до
+			тих пір, поки суми не буде достатньо для оплати товарів (кожного разу користувачу повідомляють, яку ще суму
+			потрібно ввести).
+		</p>
+	</div>
+	<script>
+		if (confirm("Почати тестування?")) {
+			const sumRecept = parseFloat(prompt(`Введіть сумму покупок`, `1000`))
+			let balance = sumRecept
+			let amountUserPay = 0
+			let restPay = 0
+			do {
+				let userPay = parseFloat(prompt(`До слати ${balance.toFixed(2)}. Яку сумму вносите? `, `200`))
+				balance -= userPay
+				amountUserPay += userPay
+			} while (balance > 0) restPay = amountUserPay - sumRecept
+			document.write(`<h2> Ви розрахувались повністю. Ваша здача складає: ${restPay.toFixed(2)} грн. Дякуємо за покупку! </h2>`)
+		}
+	</script>
+	<a href="/index.html">На головну</a>
+</body>
+
+</html>

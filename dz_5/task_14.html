@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 11</title>
+	<link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+	<div class="main">
+		<h1 class="main_title">
+			Задача 11.
+		</h1>
+		<h2 class="main_subtitle">
+			Умова задачі:
+		</h2>
+		<p class="main_text">
+			Знайти суму 5 непарних чисел, що знаходяться між заданими користувачем числами.
+		</p>
+	</div>
+	<script>
+		if (confirm("Почати тестування?")) {
+			let minNum = parseInt(prompt(`Введіть мінімальне число`, `1`))
+			const maxNum = parseInt(prompt(`Введіть максимальне число`, `100`))
+			let sumNum = 0
+			let count = 0
+
+			if (minNum % 2 === 0) minNum += 1
+			for (let i = minNum, count = 0; i < maxNum && count < 5; i += 2) {
+				sumNum += i
+				count++
+			}
+			document.write(`<h2>Відповідь:</h2><p>Між ${minNum} та ${maxNum} сумма перших непарних 5 чисел ${sumNum}.</p> `)
+		}
+	</script>
+	<a href="/index.html">На головну</a>
+</body>
+
+</html>

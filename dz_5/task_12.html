@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 9</title>
+	<link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+	<div class="main">
+		<h1 class="main_title">
+			Задача 9.
+		</h1>
+		<h2 class="main_subtitle">
+			Умова задачі:
+		</h2>
+		<p class="main_text">
+			Користувач загадує число. Комп’ютер задає питання поки не вгадає число користувача
+		</p>
+	</div>
+	<script>
+		if (confirm("Почати тестування?")) {
+			const minNum = 1
+			const maxNum = 5
+			let randomNum
+			do {
+				randomNum = minNum + Math.floor(Math.random() * maxNum)
+			} while (!confirm(`Ви загадали число ${randomNum}`));
+		}
+	</script>
+	<a href="/index.html">На головну</a>
+</body>
+
+</html>

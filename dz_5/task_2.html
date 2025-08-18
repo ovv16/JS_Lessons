@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача №-1</title>
+	<link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+	<div class="main">
+		<h1 class="main_title">
+			Задача №-1
+		</h1>
+		<h2 class="main_subtitle">
+			Умова задачі:
+		</h2>
+		<p class="main_text">
+			Вивести на екран номери місяців весни і літа (від 3 до 8)
+		</p>
+	</div>
+	<script>
+		if (confirm("Почати тестування?")) {
+			let monthNum = 3
+			while (monthNum <= 8) {
+				document.write(`<p>Місяць №${monthNum}</p>`)
+				monthNum++
+			}
+		}
+	</script>
+	<a href="/index.html">На головну</a>
+</body>
+
+</html>

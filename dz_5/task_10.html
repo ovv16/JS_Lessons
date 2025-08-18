@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 7</title>
+	<link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+	<div class="main">
+		<h1 class="main_title">
+			Задача 7.
+		</h1>
+		<h2 class="main_subtitle">
+			Умова задачі:
+		</h2>
+		<p class="main_text">
+			Вивести на екран N абзаців (N вводиться користувачем) за зразком:
+		</p>
+	</div>
+	<script>
+		if (confirm("Почати тестування?")) {
+			let customerNum = parseInt(prompt(`Введіть кількість абзаців`, `1`))
+			let text = ""
+			for (let titleNum = 1; titleNum <= customerNum; titleNum++) {
+				text += `<h1>Заголовок ${titleNum}</h1>`
+				for (let p = 1; p <= titleNum; p++) {
+					text += `<p>Розділ ${titleNum}, параграф ${p}</p>`
+				}
+			}
+			document.write(text)
+		}
+	</script>
+	<a href="/index.html">На головну</a>
+</body>
+
+</html>

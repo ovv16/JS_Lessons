@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача № 5</title>
+	<link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+	<div class="main">
+		<h1 class="main_title">
+			Задача 5.
+		</h1>
+		<h2 class="main_subtitle">
+			Умова задачі:
+		</h2>
+		<p class="main_text">
+			Вивести таблицю
+		</p>
+	</div>
+	<script>
+		if (confirm("Почати тестування?")) {
+
+			let table = `<table border="1"><tbody>`
+			let number = 1
+			for (let row = 1; row <= 3; row++) {
+				table += `<tr>`
+				for (i = 0; i < 3; i++) {
+					table += `<th>${number}</th>`
+					number++
+				}
+				table += "</tr>"
+			}
+			table += "</tbody></table>"
+			document.write(table)
+		}
+	</script>
+	<div><a href="/index.html">На головну</a></div>
+</body>
+
+</html>

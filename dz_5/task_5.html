@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача № 2</title>
+	<link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+	<div class="main">
+		<h1 class="main_title">
+			Задача № 2
+		</h1>
+		<h2 class="main_subtitle">
+			Умова задачі:
+		</h2>
+		<p class="main_text">
+			Створити 10 елементів для введення цін продуктів
+		</p>
+	</div>
+	<script>
+		if (confirm("Почати тестування?")) {
+			let productList
+			for (let productNum = 1; productNum <= 10; productNum++) {
+				productList += `<p> Product #${productNum} <input type="number" id ="product-${productNum}" name="product-${productNum}"></input>`
+			}
+			document.write(productList)
+		}
+	</script>
+	<div><a href="/index.html">На головну</a></div>
+	
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 10</title>
+	<link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+	<div class="main">
+		<h1 class="main_title">
+			Задача 10.
+		</h1>
+		<h2 class="main_subtitle">
+			Умова задачі:
+		</h2>
+		<p class="main_text">
+			Знайти суму всіх непарних чисел, що знаходяться між заданими користувачем числами.
+		</p>
+	</div>
+	<script>
+		if (confirm("Почати тестування?")) {
+			const minNum = parseInt(prompt(`Введіть мінімальне число`, `1`))
+			const maxNum = parseInt(prompt(`Введіть максимальне число`, `100`))
+			let oddNum = 0
+			if (minNum % 2 === 1)
+				for (let i = minNum; i < maxNum; i += 2) {
+					oddNum++
+				}
+			else {
+				for (let i = minNum + 1; i < maxNum; i += 2) {
+					oddNum++
+				}
+			}
+			document.write(`<h2>Відповідь:</h2><p>Від ${minNum} до ${maxNum} буде ${oddNum} непарних чисел </p> `)
+		}
+	</script>
+	<a href="/index.html">На головну</a>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 13</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="main">
+		<h1 class="main_title">
+			Задача 13.
+		</h1>
+		<h2 class="main_subtitle">
+			Умова задачі:
+		</h2>
+		<p class="main_text">
+			Морський бій. Комп’ютер випадково розташовує одиночний корабель на полі розміром N*M. Маючи К снарядів
+			користувач намагається потопити корабель.
+		</p>
+	</div>
+	<script>
+		if (confirm("Почати тестування?")) {
+			const spaceX = parseInt(prompt(`Введіть кількість ячеек поля в ширину`, `3`))
+			const spaceY = parseInt(prompt(`Введіть кількість ячеек поля в висоту`, `3`))
+			const shotNum = parseInt(prompt(`Кількість вистрелів`, `3`))
+			const shipX = 1 + Math.floor(Math.random() * spaceX)
+			const shipY = 1 + Math.floor(Math.random() * spaceY)
+			let result = ""
+			for (let i = 1; i <= shotNum; i++) {
+				let userShotX = parseInt(prompt(`Спроба ${i} по ширині`, `1`))
+				let userShotY = parseInt(prompt(`Спроба ${i} по висоті`, `1`))
+				if (userShotX === shipX && userShotY === shipY) {
+					result = `Корабель потоплений з ${i} спроби!`
+					break
+				} else result = "Ви програли!"
+			} document.write(`<h2>${result}</h2>`)
+		}
+	</script>
+	<a href="/index.html">На головну</a>
+</body>
+
+</html>

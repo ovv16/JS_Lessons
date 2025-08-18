@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача № 0</title>
+	<link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+	<div class="main">
+		<h1 class="main_title">
+			Задача № 0
+		</h1>
+		<h2 class="main_subtitle">
+			Умова задачі:
+		</h2>
+		<p class="main_text">
+			Вивести на екран 8 кнопок з написом “Hello”.
+		</p>
+	</div>
+	<script>
+		if (confirm("Почати тестування?")) {
+			let buttonNum = 0
+			while (buttonNum < 8) {
+				document.write(`<button>Hello</button><br>`)
+				buttonNum++
+			}
+		}
+	</script>
+	<a href="/index.html">На головну</a>
+</body>
+
+</html>

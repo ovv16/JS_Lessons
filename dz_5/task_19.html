@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 16</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="main">
+		<h1 class="main_title">
+			Задача 16.
+		</h1>
+		<h2 class="main_subtitle">
+			Умова задачі:
+		</h2>
+		<p class="main_text">
+			Користувач поступово вводить прибуток магазину за кожен день протягом N тижнів. Знайти загальну величину
+			прибутку та вивести величину прибутку протягом кожного окремого тижня.
+		</p>
+	</div>
+	<script>
+		if (confirm("Почати тестування?")) {
+			let userIncome = 0
+			let sum = 0
+			let weekIncome = ""
+			for (let i = 1; i <= 5; i++) {
+				userIncome = parseFloat(prompt(`Введіть сумму натходження`, `0`))
+				sum += userIncome
+				weekIncome += `<p>Тиждень ${i}, натходження ${userIncome.toFixed(2)} грн.</p> `
+			}
+			document.write(`<h2>Загальна величина прибутку ${sum.toFixed(2)} грн.</h2> <h3>Потижневі показники:</h3> ${weekIncome}`)
+		}
+	</script>
+	<a href="/index.html">На головну</a>
+</body>
+
+</html>

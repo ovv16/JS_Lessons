@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача № 4</title>
+	<link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+	<div class="main">
+		<h1 class="main_title">
+			Задача № 4
+		</h1>
+		<h2 class="main_subtitle">
+			Умова задачі:
+		</h2>
+		<p class="main_text">
+			Вивести таблицю з 3 рядків і 7 стовпців
+		</p>
+	</div>
+	<script>
+		if (confirm("Почати тестування?")) {
+			let table = `<table border="1"><tbody>`
+			for (let row = 1; row <= 3; row++) {
+				table += `<tr>`
+				for (let number = 1; number <= 7; number++) {
+					table += `<th>${number}</th>`
+				}
+				table += "</tr>"
+			}
+			table += "</tbody></table>"
+			document.write(table)
+		}
+	</script>
+	<a href="/index.html">На головну</a>
+</body>
+
+</html>

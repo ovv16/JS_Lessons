@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача 8</title>
+	<link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+	<div class="main">
+		<h1 class="main_title">
+			Задача 8.
+		</h1>
+		<h2 class="main_subtitle">
+			Умова задачі:
+		</h2>
+		<p class="main_text">
+			Користувач загадує число. За 3 спроби комп’ютер намагається вгадати число користувача
+		</p>
+	</div>
+	<script>
+		if (confirm("Почати тестування?")) {
+			let customerNum = parseInt(prompt(`Введіть число`, `1`))
+			let compNum = ""
+			let result = ""
+			for (let i = 1; i <= 3; i++) {
+				let randomNum = 1 + Math.floor(Math.random() * 5)
+				compNum += `${randomNum} `
+				if (customerNum === randomNum) {
+					result = `Вітаю комп'ютер вгадав ваш номер з ${i} спроби. Ваше число ${randomNum}.`
+					break
+				}
+				else {
+					result = `Компютер не зміг вгадати ваше число. Ваше число ${customerNum}. Числа які загадав комп'ютер ${compNum}.`
+				}
+			}
+			document.write(result)
+		}
+	</script>
+	<div><a href="/index.html">На головну</a></div>
+
+</body>
+
+</html>

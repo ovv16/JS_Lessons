@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Задача № 3</title>
+	<link rel="stylesheet" href="/style.css">
+
+</head>
+
+<body>
+	<div class="main">
+		<h1 class="main_title">
+			Задача № 3
+		</h1>
+		<h2 class="main_subtitle">
+			Умова задачі:
+		</h2>
+		<p class="main_text">
+			Вивести таблицю з одним рядком і 7 стовпцями.
+		</p>
+	</div>
+	<script>
+		if (confirm("Почати тестування?")) {
+			let number = 1
+			let table = `<table border="1"><tbody><tr>`
+			while (number <= 7) {
+				table += `<td>${number}</td>`
+				number++
+			}
+			table += "</tr></tbody></table>"
+			document.write(table)
+		}
+	</script>
+	<a href="/index.html">На головну</a>
+</body>
+
+</html>
