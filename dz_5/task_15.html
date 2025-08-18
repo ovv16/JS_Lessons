@@ -25,31 +25,31 @@
 	</div>
 	<script>
 		// if (confirm("Почати тестування?")) {
-			let pic1 = 1 + Math.floor(Math.random() * 4)
-			let pic2 = 1 + Math.floor(Math.random() * 4)
-			let pic3 = 1 + Math.floor(Math.random() * 4)
-			let prize = 0
-			if (pic1 === pic2 && pic2 === pic3) {
-				switch (pic1) {
-					case 1:
-						prize = 100
-						break;
-					case 2:
-						prize = 200
-						break;
-					case 3:
-						prize = 500
-						break;
-					case 4:
-						prize = 1000
-						break;
-					default:
-				}
+		let pic1 = 1 + Math.floor(Math.random() * 4)
+		let pic2 = 1 + Math.floor(Math.random() * 4)
+		let pic3 = 1 + Math.floor(Math.random() * 4)
+		let prize = 0
+		if (pic1 === pic2 && pic2 === pic3) {
+			switch (pic1) {
+				case 1:
+					prize = 100
+					break;
+				case 2:
+					prize = 200
+					break;
+				case 3:
+					prize = 500
+					break;
+				case 4:
+					prize = 1000
+					break;
+				default:
 			}
-			document.write(`<div class="slot-box"><div class="img-slot"><img src="\\img\\${pic1}.jpg" alt="Image1"></div><div  class="img-slot"><img src="\\img\\${pic2}.jpg" alt="Image2"></div><div class="img-slot"><img src="\\img\\${pic3}.jpg" alt="Image1"></div></div><h2>Ваш виграш ${prize} грн</h2>`)
+		}
+		document.write(`<div class="slot-box"><div class="img-slot"><img src="\\img\\${pic1}.jpg" alt="Image1"></div><div  class="img-slot"><img src="\\img\\${pic2}.jpg" alt="Image2"></div><div class="img-slot"><img src="\\img\\${pic3}.jpg" alt="Image1"></div></div><h2>Ваш виграш ${prize} грн</h2>`)
 		// }
 	</script>
-	<a href="/index.html">На головну</a>
+	<a href="index.html">На головну</a>
 </body>
 
 </html>
